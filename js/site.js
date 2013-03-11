@@ -15,7 +15,7 @@ $(document).ready(function(){
   });
 
   var hash = window.location.hash.substring(1);
-  if($.inArray(languages, hash)) {
+  if(hash && $.inArray(languages, hash)) {
     change_lang(hash);
   }
 });
